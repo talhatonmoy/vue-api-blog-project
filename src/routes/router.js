@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Categories from '../components/Categories.vue'
 import Blog from '../components/Blog.vue'
 import Contact from '../components/Contact.vue'
+import SinglePost from '../components/SinglePost.vue'
 
 
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
         path: '/contact',
         component: Contact,
         name: 'contact' // Named Routing
+    },
+    {
+        path: '/posts/:slug',
+        component: SinglePost,
+        name: 'singlePost'
     }
 ]
 
